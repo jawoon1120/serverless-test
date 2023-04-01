@@ -1,6 +1,7 @@
 'use strict';
+import { APIGatewayEvent } from 'aws-lambda';
 
-exports.hello = async (event) => {
+exports.hello = async (event:APIGatewayEvent) => {
   return {
     statusCode: 200,
     body: JSON.stringify(
